@@ -44,13 +44,12 @@
       }
     }
 
-    .brand {
-      text-align: center;
-      letter-spacing: 0.15em;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
+    .brand img {
+        width: 120px;   /* justér størrelsen — fx 80px, 100px, 120px */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* centrerer billedet */
+      }
 
     .subtitle {
       text-align: center;
@@ -66,7 +65,7 @@
 
     .meta-line {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.15em;
@@ -91,6 +90,16 @@
     .info-list li + li {
       margin-top: 4px;
     }
+
+    .info-list a {
+        color: #0042d8;
+        text-decoration: none; /* fjerner stregen */
+        font-weight: inherit;  /* sikrer den følger den normale tekst */
+      }
+      
+      .info-list a:hover {
+        text-decoration: underline; /* valgfrit — kan fjernes */
+      }
 
     .prices {
       margin-top: 8px;
