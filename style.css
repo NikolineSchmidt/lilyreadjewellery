@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
-    background: #c8c8c8;
+    background: #797979;
     font-family: "Poppins", sans-serif;
   }
   
@@ -65,6 +65,7 @@
   
   /* Tagline styling */
   .meta-line {
+    white-space: nowrap;
     font-family: "Gochi Hand";
     text-align: center;
     font-size: 1.1rem;
@@ -112,10 +113,14 @@
   }
   
   /* Rækker med pris og tekst */
-  .price-row {
+.price-row {
     display: flex;
     justify-content: space-between;
     margin-top: 4px;
+  }
+  
+  .price-row span:last-child {
+    white-space: nowrap;
   }
   
   /* Styling af prislabels */
