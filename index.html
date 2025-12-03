@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+  <!-- Grundlæggende metadata og link til stylesheet -->
   <meta charset="UTF-8" />
-  <title>Lily read – QR kode flyer</title>
+  <title>Lily Read – QR kode landing page (workshop)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="receipt-wrapper">
-    <div class="receipt">
+  <!-- Wrapper der styrer bredde og animationseffekt -->
+  <section class="receipt-wrapper">
+
+    <!-- Selve bon-layoutet med indhold -->
+    <article class="receipt">
+
       <header>
-        <div class="brand"><img src="images/lilyreadlogo.webp" alt="logo"></div>
-        <div class="divider"></div>
+        <!-- Logo-område -->
+        <figure class="brand">
+          <img src="images/lilyreadlogo.webp" alt="Lily Read logo">
+        </figure>
 
-        <div class="meta-line">
+        <!-- Dekorativ streg -->
+        <hr class="divider">
+
+        <!-- Kort tagline -->
+        <p class="meta-line">
           <span>DESIGN EN RING DER HOLDER FOR EVIGT</span>
-        </div>
+        </p>
 
-        <div class="divider"></div>
+        <!-- Dekorativ streg -->
+        <hr class="divider">
       </header>
 
       <main>
-        <p class="section-title">Praktisk information om workshop</p>
+        <!-- Sektionstitel for info -->
+        <h2 class="section-title">Praktisk information om workshop</h2>
 
+        <!-- Liste med praktiske oplysninger -->
         <ul class="info-list">
           <li>📍 Lokation: Graven 16F, Aarhus C</li>
-          <li>🗓️ Hvornår: Hver måned – <a href="https://www.lilyreadjewellery.com/products/custom-ring-workshop-open-event" target="_blank">klik her</a> for at se ledige datoer</li>
+          <li>
+            🗓️ Hvornår: Hver måned –
+            <a href="https://www.lilyreadjewellery.com/products/custom-ring-workshop-open-event" target="_blank">
+              klik her
+            </a>
+            for at se ledige datoer
+          </li>
           <li>⏱️ Varighed: 3 timer</li>
           <li>🗣️ Sprog: Engelsk</li>
           <li>🥨 Snacks og drikkevarer er inkluderet</li>
         </ul>
 
-        <div class="divider"></div>
+        <!-- Dekorativ streg -->
+        <hr class="divider">
 
+        <!-- Prisoversigt -->
         <section class="prices">
-          <div class="price-row">
+          <p class="price-row">
             <span class="price-label">Kun workshop</span>
             <span>450 kr</span>
-          </div>
-          <div class="price-row">
+          </p>
+
+          <p class="price-row">
             <span class="price-label">Workshop inkl. sølvafstøbning</span>
             <span>1350 kr</span>
-          </div>
+          </p>
         </section>
 
-        <div class="highlight-box">
-            Garanti for hygge og fordybelse
-        </div>
+        <!-- Highlighted budskab -->
+        <section class="highlight-box">
+          Garanti for hygge og fordybelse
+        </section>
 
-        <div class="barcode"></div>
+        <!-- Simuleret stregkode -->
+        <section class="barcode"></section>
+
+        <!-- Afsluttende tekst -->
         <p class="receipt-number">Din kvittering for en god oplevelse</p>
       </main>
-    </div>
-  </div>
+
+    </article>
+  </section>
 </body>
 </html>

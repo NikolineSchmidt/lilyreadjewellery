@@ -1,152 +1,156 @@
- * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 16px;
-      background: #f3f3f3;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-    }
-
-    /* --- Wrapper to hide animation overflow --- */
-    .receipt-wrapper {
-      width: 100%;
-      max-width: 420px;
-      overflow: hidden; /* sørger for at bonnen “kommer ned fra toppen” */
-    }
-
-    /* --- Receipt --- */
-    .receipt {
-      background: #ffffff;
-      width: 100%;
-      padding: 24px 22px 32px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      border-radius: 8px;
-      color: #111;
-      font-family: "Courier New", Courier, monospace;
-      transform: translateY(-110%);
-      animation: printReceipt 1.8s ease-out forwards;
-    }
-
-    @keyframes printReceipt {
-      0% {
-        transform: translateY(-110%);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    .brand img {
-        width: 120px;   /* justér størrelsen — fx 80px, 100px, 120px */
-        height: auto;
-        display: block;
-        margin: 0 auto; /* centrerer billedet */
-      }
-
-    .subtitle {
-      text-align: center;
-      font-family: "Pacifico", "Brush Script MT", cursive;
-      font-size: 1.1rem;
-      margin-bottom: 12px;
-    }
-
-    .divider {
-      border-bottom: 2px dotted #999;
-      margin: 12px 0 18px;
-    }
-
-    .meta-line {
-      display: flex;
-      justify-content: space-evenly;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      margin-bottom: 4px;
-    }
-
-    .section-title {
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 10px;
-    }
-
-    .info-list {
-      list-style: none;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
-    .info-list li + li {
-      margin-top: 4px;
-    }
-
-    .info-list a {
-        color: #0042d8;
-        text-decoration: none; /* fjerner stregen */
-        font-weight: inherit;  /* sikrer den følger den normale tekst */
-      }
-      
-      .info-list a:hover {
-        text-decoration: underline; /* valgfrit — kan fjernes */
-      }
-
-    .prices {
-      margin-top: 8px;
-      font-size: 0.9rem;
-    }
-
-    .price-row {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 4px;
-    }
-
-    .price-label {
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .highlight-box {
-      margin: 22px 0 14px;
-      padding: 10px 12px;
-      border: 1px dotted #aaa;
-      border-radius: 999px;
-      text-align: center;
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .barcode {
-      height: 44px;
-      margin-top: 8px;
-      background-image: repeating-linear-gradient(
-        90deg,
-        #000 0px,
-        #000 2px,
-        transparent 2px,
-        transparent 4px
-      );
-    }
-
-    .receipt-number {
-      text-align: center;
-      font-size: 0.7rem;
-      margin-top: 6px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
+/* Reset og generelle standarder */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Sideopsætning og centrering */
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #f3f3f3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  
+  /* Wrapper med max-bredde og skjult overflow til animation */
+  .receipt-wrapper {
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+  }
+  
+  /* Selve bon-elementets udseende og animation */
+  .receipt {
+    background: #ffffff;
+    width: 100%;
+    padding: 24px 22px 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    color: #111;
+    font-family: "Courier New", Courier, monospace;
+    transform: translateY(-110%);
+    animation: printReceipt 1.8s ease-out forwards;
+  }
+  
+  /* Animation der får bonen til at "printes ud" */
+  @keyframes printReceipt {
+    0% { transform: translateY(-110%); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Logoets placering og størrelse */
+  .brand img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Dekorative stiplede linjer */
+  .divider {
+    border: none;
+    border-bottom: 2px dotted #999;
+    margin: 12px 0 18px;
+  }
+  
+  /* Tagline styling */
+  .meta-line {
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 4px;
+  }
+  
+  /* H2-sektionstitler */
+  .section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+  }
+  
+  /* Liste med workshop-oplysninger */
+  .info-list {
+    list-style: none;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  /* Ekstra afstand mellem listepunkter */
+  .info-list li + li {
+    margin-top: 4px;
+  }
+  
+  /* Links uden underline */
+  .info-list a {
+    color: #0042d8;
+    text-decoration: none;
+  }
+  
+  .info-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pris-sektion */
+  .prices {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+  
+  /* Rækker med pris og tekst */
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+  
+  /* Styling af prislabels */
+  .price-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  
+  /* Highlightet boble */
+  .highlight-box {
+    margin: 22px 0 14px;
+    padding: 10px 12px;
+    border: 1px dotted #aaa;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Simuleret stregkode */
+  .barcode {
+    height: 44px;
+    margin-top: 8px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    );
+  }
+  
+  /* Afsluttende tekst */
+  .receipt-number {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 6px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  
