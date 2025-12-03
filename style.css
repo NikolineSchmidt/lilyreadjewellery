@@ -33,7 +33,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     color: #111;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "poppins";
     transform: translateY(-110%);
     animation: printReceipt 1.8s ease-out forwards;
   }
@@ -61,8 +61,9 @@
   
   /* Tagline styling */
   .meta-line {
+    font-family: "Gochi Hand";
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     margin-bottom: 4px;
@@ -83,6 +84,7 @@
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 16px;
+    font-weight: 100;
   }
   
   /* Ekstra afstand mellem listepunkter */
@@ -149,8 +151,9 @@
   
   /* Afsluttende tekst */
   .receipt-number {
+    font-family: "Gochi Hand";
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: 6px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
