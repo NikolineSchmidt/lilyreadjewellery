@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
-    background: #f3f3f3;
+    background: #c8c8c8;
     font-family: "Poppins", sans-serif;
   }
   
@@ -31,7 +31,7 @@
   
   /* Selve bon-elementets udseende og animation */
   .receipt {
-    background: #ffffff;
+    background: #fdfff5;
     width: 100%;
     padding: 24px 22px 32px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
