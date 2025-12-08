@@ -59,12 +59,13 @@
   /* Dekorative stiplede linjer */
   .divider {
     border: none;
-    border-bottom: 2px dotted #999;
+    border-bottom: 2px dotted #111;
     margin: 12px 0 18px;
   }
   
   /* Tagline styling */
   .meta-line {
+    color: #0042d8;
     white-space: nowrap;
     font-family: "Gochi Hand";
     text-align: center;
@@ -128,12 +129,13 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
+
   
   /* Highlightet boble */
   .highlight-box {
     margin: 22px 0 14px;
     padding: 10px 12px;
-    border: 1px dotted #aaa;
+    border: 1px dotted #111;
     border-radius: 999px;
     text-align: center;
     font-size: 0.7rem;
@@ -159,6 +161,7 @@
   
   /* Afsluttende tekst */
   .receipt-number {
+    color: #0042d8;
     font-family: "Gochi Hand";
     text-align: center;
     font-size: 0.8rem;
