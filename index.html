@@ -1,100 +1,110 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <!-- Grundlæggende metadata og link til stylesheet -->
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Lily Read – QR kode landing page (workshop)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Forbedrer font-indlæsning -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;400;500;600;700&display=swap">
+
+  <!-- Ekstern CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Wrapper der styrer bredde og animationseffekt -->
-  <section class="receipt-wrapper">
 
-    <!-- Selve bon-layoutet med indhold -->
+  <!-- Overordnet indpakning af kvitteringslayout -->
+  <section class="receipt-wrapper">
+    <h2 class="visually-hidden">Workshop Kvittering</h2>
+
+    <!-- Hovedindholdet for kvitteringen -->
     <article class="receipt">
 
       <header>
-        <!-- Logo-område -->
+        <h1 class="visually-hidden">Lily Read Workshop Kvittering</h1>
+
+        <!-- Logo for brandet -->
         <figure class="brand">
           <img src="img/logoblue.webp" alt="Lily Read logo">
         </figure>
 
-        <!-- Dekorativ streg (horizontal rule) -->
         <hr class="divider">
 
-        <!-- Kort tagline -->
+        <!-- Tagline / statement -->
         <p class="meta-line">
           <span>DESIGN EN RING DER HOLDER FOR EVIGT</span>
         </p>
 
-        <!-- Dekorativ streg (horizontal rule)-->
         <hr class="divider">
       </header>
 
-      <main>
-        <!-- Sektionstitel for info -->
-        <h2 class="section-title">Information om workshop</h2>
+      <!-- Sektionstitel til workshopinfo -->
+      <h2 class="section-title">Information om workshop</h2>
 
-        <!-- Liste med praktiske oplysninger -->
-        <ul class="info-list">
-            <li>
-                📍 Lokation:
-                <a href="https://www.google.com/maps?q=Graven+16F,+Aarhus+C" target="_blank">
-                  Graven 16F, Aarhus C
-                </a>
-              </li>
-            🗓️ Hvornår:
-            <a href="https://www.lilyreadjewellery.com/products/custom-ring-workshop-open-event" target="_blank">
-              klik her
-            </a>
-            for at se ledige datoer
-          </li>
-          <li>⏱️ Varighed: 3 timer</li>
-          <li>🗣️ Sprog: Engelsk</li>
-          <li>🥨 Snacks og drikkevarer er inkluderet</li>
-          <li>💍 Klar inden for 3–4 uger</li>
-          <li>
-            💙
-            <a href="https://www.instagram.com/eksamen_lr/" target="_blank">
-              @instagram
-            </a>
-          </li>
-        </ul>
+      <!-- Liste med praktiske oplysninger -->
+      <ul class="info-list">
+        <li>
+          📍 Lokation:
+          <a href="https://www.google.com/maps?q=Graven+16F,+Aarhus+C" target="_blank">
+            Graven 16F, Aarhus C
+          </a>
+        </li>
 
-        <!-- Dekorativ streg (horizontal rule) -->
-        <hr class="divider">
+        <li>
+          🗓️ Hvornår:
+          <a href="https://www.lilyreadjewellery.com/products/custom-ring-workshop-open-event" target="_blank">
+            Klik her
+          </a>
+          for at se ledige datoer
+        </li>
 
-        <!-- Prisoversigt -->
-        <section class="prices">
-          <p class="price-row">
-            <span class="price-label">Kun workshop</span>
-            <span>450 kr</span>
-          </p>
+        <li>⏱️ Varighed: 3 timer</li>
+        <li>🗣️ Sprog: Engelsk</li>
+        <li>🥨 Snacks og drikkevarer er inkluderet</li>
+        <li>💍 Klar inden for 3–4 uger</li>
 
-          <p class="price-row">
-            <span class="price-label">Workshop inkl. sølvafstøbning</span>
-            <span>1350 kr</span>
-          </p>
-        </section>
+        <li>
+          💙 <a href="https://www.instagram.com/eksamen_lr/" target="_blank">@instagram</a>
+        </li>
+      </ul>
 
-        <!-- Highlighted budskab -->
-        <section class="highlight-box">
-          Garanti for hygge og fordybelse
-        </section>
+      <hr class="divider">
 
-        <!-- Simuleret stregkode -->
-        <section class="barcode"></section>
+      <!-- Prisoversigt som selvstændig sektion -->
+      <section class="prices">
+        <h3 class="visually-hidden">Priser</h3>
 
-        <!-- Afsluttende tekst -->
-        <p class="receipt-number">Din kvittering for en god oplevelse</p>
-      </main>
+        <p class="price-row">
+          <span class="price-label">Kun workshop</span>
+          <span>450 kr</span>
+        </p>
+
+        <p class="price-row">
+          <span class="price-label">Workshop inkl. sølvafstøbning</span>
+          <span>1350 kr</span>
+        </p>
+      </section>
+
+      <!-- Fremhævet budskab -->
+      <p class="highlight-box">
+        Garanti for hygge og fordybelse
+      </p>
+
+      <!-- Grafisk stregkodeelement -->
+      <figure class="barcode"></figure>
+
+      <!-- Sluttekst -->
+      <p class="receipt-number">Din kvittering for en god oplevelse</p>
 
     </article>
+
   </section>
+
 </body>
 </html>
